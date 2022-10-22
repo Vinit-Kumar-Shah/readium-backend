@@ -3,7 +3,7 @@ package article
 import (
 	"github.com/alpody/fiber-realworld/model"
 )
-
+// This file is made for adding interface
 type Store interface {
 	GetBySlug(string) (*model.Article, error)
 	GetUserArticleBySlug(userID uint, slug string) (*model.Article, error)
