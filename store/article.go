@@ -18,13 +18,6 @@ func NewArticleStore(db *gorm.DB) *ArticleStore {
 }
 
 
-// func NewArticleStore(db *gorm.DB) *ArticleStore {
-// 	return &ArticleStore{
-// 		db: db,
-// 	}
-// }
-
-//
 
 func (as *ArticleStore) GetBySlug(s string) (*model.Article, error) {
 	var m model.Article
